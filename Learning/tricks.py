@@ -88,3 +88,14 @@ ENDC = '\033[0m'
 BOLD = '\033[1m'
 UNDERLINE = '\033[4m'
 print(f'{color[3]}Colors!{color[3]}')
+
+
+# get all coordinate between two points
+coordinates = [[5, 5],[8, 8],[9, 9]]
+def solve( coordinates):
+      (x0, y0), (x1, y1) = coordinates[0], coordinates[1]
+      for i in range(2, len(coordinates)):
+         x, y = coordinates[i]
+         if (x0 - x1) * (y1 - y) != (x1 - x) * (y0 - y1):
+            return False
+      return True
