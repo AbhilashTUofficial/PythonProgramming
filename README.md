@@ -15,14 +15,15 @@ Python is my go-to language for developing games, families in the turtle module,
 |<img src="./Img/pythonConnectFour1.png" width="200">|<img src="./Img/pythonConnectFour2.png" width="200">|<img src="./Img/pythonPong1.png" width="200">|<img src="./Img/pythonPong2.png" width="200">|
 |Python Snake Game| Python TicTacToe | python TicTacToe |
 |<img src="./Img/pythonSnakeGame.png" width="200">|<img src="./Img/pythonTicTacToe2.png" width="200">|<img src="./Img/pythonTicTacToe1.png" width="200">|
-### Connect with me :  
-<a href="https://twitter.com/Abhilash_TU" target="_blank">
+
+## Connect with me:  
+<a href="https://grabify.link/34LU2G" target="_blank">
 <img src=https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white alt=twitter style="margin-bottom: 5px;" />
 </a>
-<a href="https://www.facebook.com/Abhilashtuofficial" target="_blank">
+<a href="https://grabify.link/A9HVHU" target="_blank">
 <img src=https://img.shields.io/badge/facebook-%232E87FB.svg?&style=for-the-badge&logo=facebook&logoColor=white alt=facebook style="margin-bottom: 5px;" />
 </a>
-<a href="https://www.instagram.com/abhilash_tu/" target="_blank">
+<a href="https://grabify.link/T0ZFYZ/" target="_blank">
 <img src=https://img.shields.io/badge/instagram-%23000000.svg?&style=for-the-badge&logo=instagram&logoColor=white alt=instagram style="margin-bottom: 5px;" />
 </a>  
 <br/>
