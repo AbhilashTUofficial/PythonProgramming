@@ -1,11 +1,12 @@
 import tkinter
-from tkinter.constants import END
+from tkinter.constants import DISABLED, END, NORMAL
 
 frame=tkinter.Tk();
 frame.title("Calculator");
     
 
 def OnClick(n):
+    inputField.config(state=NORMAL);
     if(n=="ce"):
         inputField.delete(0,END);
     elif(n=="c"):
@@ -19,6 +20,7 @@ def OnClick(n):
             pass;
     else:
         inputField.insert(END,n);
+    inputField.config(state=DISABLED);
     
 
 def createNumButtons():
@@ -45,8 +47,8 @@ def createFuncButtons():
     bC=tkinter.Button(frame,text="C",padx=42,pady=30,command=lambda:OnClick('c')).grid(row=5,column=1);
     bCE=tkinter.Button(frame,text="Clear All",padx=70,pady=30,command=lambda:OnClick("ce")).grid(row=5,column=2,columnspan=2);
 
-inputField=tkinter.Entry(frame,width=40,borderwidth=2,fg="#696969",bg="#d3d3d3",highlightbackground="#d8d8d8",font="Arial");
-inputField.grid(row=0,column=0,columnspan=4,padx=10,pady=10);
+inputField=tkinter.Entry(frame,width=20,borderwidth=2,fg="#696969",bg="#d3d3d3",highlightbackground="#d8d8d8",font=("Arial",26),state=DISABLED,disabledforeground="#696969");
+inputField.grid(row=0,column=0,columnspan=4,padx=5,pady=10);
 createNumButtons();
 createFuncButtons();
 
