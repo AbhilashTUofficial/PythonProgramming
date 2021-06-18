@@ -24,18 +24,23 @@ def askYesNo():
 def askRetryCancel():
     messagebox.askretrycancel("Ask Retry Cancel Pop Up","RETRY OR CANCEL");
 
-def guessTheNumber(l,m):
-    print(l,m)
-    n=math.floor(l+m/2);
-    if(l+1==m):
-        messagebox.showinfo("Found your Number","Your Number is "+str(n));
-    else: 
-        res=messagebox.askyesno("Guess A Number (1-9)","Your Number is between "+str(l)+" and "+str(m));
-        n=round(m/2)
+def guessTheNumber(arr):
+    arr1=arr[:round(len(arr)/2)]
+    arr2=arr[round(len(arr)/2):]    
+    n=0;
+    if(len(arr)==1):
+        n=arr[0];
+    
+    if(n==0):
+        res=messagebox.askyesno("","Is your number one of the following? \n"+str(arr1));
+
         if(res==1):
-            guessTheNumber(l,n)
-        elif(res==0):
-            guessTheNumber(n,m)
+            guessTheNumber(arr1);
+        else:
+            guessTheNumber(arr2);
+    else:
+        messagebox.showinfo("Found your Number","Your Number is "+str(n));
+
 
 frame=tkinter.LabelFrame(window,padx=10,pady=10,bg="#ffbf00");
 tkinter.Button(frame,text="Show Info",width=16,padx=5,pady=5,command=showInfo).pack();
@@ -47,7 +52,7 @@ tkinter.Button(frame,text="Ok or Cancel",width=16,padx=5,pady=5,command=askOkCan
 tkinter.Button(frame,text="Yes or No",width=16,padx=5,pady=5,command=askYesNo).pack();
 tkinter.Button(frame,text="Yes No or Cancel",width=16,padx=5,pady=5,command=lambda : messagebox.askyesnocancel("Ask Yes No Cancel Pop Up","YES NO OR CANCEL")).pack();
 tkinter.Button(frame,text="Retry Or Cancel",width=16,padx=5,pady=5,command=askRetryCancel).pack();
-tkinter.Button(frame,text="GUESS THE NUMBER",width=16,padx=5,pady=5,command=lambda : guessTheNumber(1,9)).pack();
+tkinter.Button(frame,text="GUESS THE NUMBER",width=16,padx=5,pady=5,command=lambda : guessTheNumber([1,2,3,4,5,6,7,8,9])).pack();
 
 
 frame.pack(pady=10,padx=10);
