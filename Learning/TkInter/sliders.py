@@ -11,9 +11,7 @@ def changeValue(value):
     # vert=slice(4,7)
     # horiSlider.set(int(hori));
     tkinter.Label(text=str(horiSlider.get())+"X"+str(vertSlider.get())).pack();
-    window.geometry(str(horiSlider.get())+"x"+str(vertSlider.get()));
-   
-    
+    window.geometry(str(horiSlider.get())+"x"+str(vertSlider.get()));   
 
 horiSlider=tkinter.Scale(window,from_=200,to=400,orient=HORIZONTAL,command=changeValue);
 vertSlider=tkinter.Scale(window,from_=200,to=400,orient=HORIZONTAL,command=changeValue);
