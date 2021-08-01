@@ -84,4 +84,3 @@ if(all(i%2==0 for i in a)):
 
 a=[1,2,3]
 
-print([(i!=j) for i in a for j in a])
