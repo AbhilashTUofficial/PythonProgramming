@@ -33,6 +33,16 @@ Python is my go-to language for developing games, families in the turtle module,
     |   |   |-- Sets.py
     |   |   |-- Strings.py
     |   |   |-- Tuples.py
+    |   |   |-- Logging
+    |   |       |-- errorLogs
+    |   |       |   |-- errors.log
+    |   |       |-- error_setup.py
+    |   |       |-- log_setup.py
+    |   |       |-- log_tracker.log
+    |   |       |-- Logging.py
+    |   |       |-- rotating_error_log.py
+    |   |       |-- timed_rotation_error_log.py
+    |   |       |-- warning_log_tracker.log
     |   |      
     |   |-- TkInter
     |       |-- buttons.py

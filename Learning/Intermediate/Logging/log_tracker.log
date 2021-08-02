@@ -1,0 +1,8 @@
+08/19/2021 19:03:48 - Logging.py - n is zero 
+ - line : 17
+Traceback (most recent call last):
+  File "/home/abhilash/Computer-Science/GitHub/Python-programming/Learning/Intermediate/Logging/Logging.py", line 14, in func1
+    print(1/n);
+ZeroDivisionError: division by zero
+08/19/2021 19:03:48 - Logging.py - stream handler - line : 18
+08/19/2021 19:03:48 - Logging.py - file handler - line : 19

@@ -1,0 +1,45 @@
+Error 1: list assignment index out of range
+Traceback (most recent call last):
+  File "/home/abhilash/Computer-Science/GitHub/Python-programming/Learning/Intermediate/Logging/rotating_error_log.py", line 16, in <module>
+    arr[i]=0
+IndexError: list assignment index out of range
+Error 2: list assignment index out of range
+Traceback (most recent call last):
+  File "/home/abhilash/Computer-Science/GitHub/Python-programming/Learning/Intermediate/Logging/rotating_error_log.py", line 16, in <module>
+    arr[i]=0
+IndexError: list assignment index out of range
+Error 3: list assignment index out of range
+Traceback (most recent call last):
+  File "/home/abhilash/Computer-Science/GitHub/Python-programming/Learning/Intermediate/Logging/rotating_error_log.py", line 16, in <module>
+    arr[i]=0
+IndexError: list assignment index out of range
+Error 4: list assignment index out of range
+Traceback (most recent call last):
+  File "/home/abhilash/Computer-Science/GitHub/Python-programming/Learning/Intermediate/Logging/rotating_error_log.py", line 16, in <module>
+    arr[i]=0
+IndexError: list assignment index out of range
+Error 5: list assignment index out of range
+Traceback (most recent call last):
+  File "/home/abhilash/Computer-Science/GitHub/Python-programming/Learning/Intermediate/Logging/rotating_error_log.py", line 16, in <module>
+    arr[i]=0
+IndexError: list assignment index out of range
+Error 6: list assignment index out of range
+Traceback (most recent call last):
+  File "/home/abhilash/Computer-Science/GitHub/Python-programming/Learning/Intermediate/Logging/rotating_error_log.py", line 16, in <module>
+    arr[i]=0
+IndexError: list assignment index out of range
+Error 7: list assignment index out of range
+Traceback (most recent call last):
+  File "/home/abhilash/Computer-Science/GitHub/Python-programming/Learning/Intermediate/Logging/rotating_error_log.py", line 16, in <module>
+    arr[i]=0
+IndexError: list assignment index out of range
+Error 8: list assignment index out of range
+Traceback (most recent call last):
+  File "/home/abhilash/Computer-Science/GitHub/Python-programming/Learning/Intermediate/Logging/rotating_error_log.py", line 16, in <module>
+    arr[i]=0
+IndexError: list assignment index out of range
+Error 9: list assignment index out of range
+Traceback (most recent call last):
+  File "/home/abhilash/Computer-Science/GitHub/Python-programming/Learning/Intermediate/Logging/rotating_error_log.py", line 16, in <module>
+    arr[i]=0
+IndexError: list assignment index out of range
