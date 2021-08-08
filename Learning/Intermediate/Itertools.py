@@ -76,3 +76,12 @@ for i in repeat(1,3):
     pass;
 
 print(list(l));
+
+a=[2,6,8]
+
+if(all(i%2==0 for i in a)):
+    print("even")
+
+a=[1,2,3]
+
+print([(i!=j) for i in a for j in a])

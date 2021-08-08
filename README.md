@@ -1,6 +1,7 @@
 # Python-programming
 Python is my go-to language for developing games, families in the turtle module, and framework pygame, TensorFlow Selenium allows me to develop games and scripts faster than ever. I learned python after c++, at the beginning I couldn't help to like python because it is a loosely typed language, I always blame it for its slow operation time. Gradually I understood python is not the one language to rule them all but it has good uses.
 <br/>
+
 ### Languages & tools :
 [<img align="left" alt="Visual Studio Code" width="26px" src="./Img/vscode.png">][vscode]
 [<img align="left" alt="Pycharm" width="26px" src="./Img/pycharm.png">][python]
@@ -9,6 +10,71 @@ Python is my go-to language for developing games, families in the turtle module,
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/AbhilashTUofficial/Python-programming?color=blue&label=Last%20Commit%3A&style=for-the-badge)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/AbhilashTUofficial/Python-programming?color=blue&label=Repo%20Size%3A&style=for-the-badge)
+
+### Directory Structure :
+    |-- Data structure & Algorithm
+    |   |-- Sorting
+    |       |-- BubbleSort.py
+    |       |-- InsertionSort.py
+    |       |-- MergeSort.py
+    |
+    |-- Learning
+    |   |
+    |   |-- main.py
+    |   |
+    |   |-- Intermediate
+    |   |   |-- Arrays.py
+    |   |   |-- Collections.py
+    |   |   |-- Dictionary.py
+    |   |   |-- Exceptions.py
+    |   |   |-- Itertools.py
+    |   |   |-- Lambda.py
+    |   |   |-- queen_backtracking.py
+    |   |   |-- Sets.py
+    |   |   |-- Strings.py
+    |   |   |-- Tuples.py
+    |   |      
+    |   |-- TkInter
+    |       |-- buttons.py
+    |       |-- calculator.ico
+    |       |-- calculator.py
+    |       |-- checkboxes.py
+    |       |-- database.py
+    |       |-- dropdown_menu.py
+    |       |-- entry.py
+    |       |-- file_dialog.py
+    |       |-- grid.py
+    |       |-- Image_viewer.py
+    |       |-- Image.py
+    |       |-- learn.py
+    |       |-- message_box.py
+    |       |-- radio_buttons.py
+    |       |-- root_frame.py
+    |       |-- slider.py
+    |       |-- windows.py
+    |
+    |-- MazePathFinder
+    |   |-- main.py
+    |
+    |-- Teris-python
+    |   |-- tetris.py
+    |   |-- README.md
+    |
+    |-- database.db
+    |
+    |-- Img
+    |   |-- pycharm.png
+    |   |-- python.png
+    |   |-- pythonConnectFour1.png
+    |   |-- pythonConnectFour2.png
+    |   |-- pythonPong1.png
+    |   |-- pythonPong2.png
+    |   |-- pythonSnakeGame.png
+    |   |-- pythonTicTacToe1.png
+    |   |-- pythonTicTacToe2.png
+    |   |-- vscode.png
+    |
+    |-- README.md
 
 |Python Connect Four| Python Connect Four | python Pong Game | python Pong Game  |
 |------|-------|-------|------|
