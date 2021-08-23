@@ -14,8 +14,8 @@ def func1():
         print(1/n);
     except ZeroDivisionError as e:
     
-        logging.debug("n is zero \n",exc_info=True);
+        # logging.debug("n is zero \n",exc_info=True);
         error_logger.error("stream handler");
-        error_logger.warning("file handler")
+        # error_logger.warning("file handler")
 
 func1()

@@ -6,7 +6,7 @@ from logging.handlers import RotatingFileHandler
 logger=logging.getLogger(__name__);
 logger.setLevel(logging.ERROR);
 
-handler=RotatingFileHandler('Learning/Intermediate/Logging/errorLogs/errors.log',maxBytes=2000,backupCount=0);
+handler=RotatingFileHandler('Learning/Intermediate/Logging/errorLogs/errors.log',maxBytes=1000,backupCount=0);
 logger.addHandler(handler);
 
 arr=[0]
