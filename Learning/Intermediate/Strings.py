@@ -17,6 +17,8 @@ stringA[-2];
 stringJ=["z"]*3;
 # Concatenage a new string
 stringC=stringA+stringB;
+# Split a string to chars
+[l for l in stringA]
 # Slice the string by interval
 stringC[2:5];
 # Slice the string from begining
@@ -82,5 +84,12 @@ stringL="The string is {}".format(stringA);
 stringL="The string is {:.3f}".format(num);
 stringM="The string is {}, The number is {}".format(stringA,num)
 stringK=f"The string is {stringA}, The number is {num+8}"
+
+# array of English alphabetic letters
+import string
+alpha=[string.ascii_letters]
+alpha=[string.ascii_lowercase]
+alpha=[string.ascii_uppercase]
+
 
 print(stringK)

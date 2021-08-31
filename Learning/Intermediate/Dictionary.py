@@ -29,4 +29,18 @@ dictC.update(dictD);
 dictC.update(dictB);
 # Clear dictionary
 dictB.clear();
+
+# create a dictionary with two arrays
+import string
+heights=[1,3,1,3,1,4,1,3,2,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5]
+res={}
+for letter in string.ascii_lowercase:
+    for h in heights:
+        res[letter] = h
+        h.remove(h)
+        break
+    
+# loop through dictionary, get array of keys or values.
+res2=[res[w]for w in string.ascii_lowercase]
+
 print(dictB);

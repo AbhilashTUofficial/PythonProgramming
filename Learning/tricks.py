@@ -11,3 +11,9 @@ arr1=[]
 m={3:'3',2:'b'}
 m=sorted(m)
 print(m[-1])
+
+# Inline-if statements
+# print("statement1" if(condition) else "statement1")
+
+a=4
+print("Even" if(a%2==0)else "Odd");
