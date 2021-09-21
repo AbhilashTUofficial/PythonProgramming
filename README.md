@@ -59,6 +59,7 @@ Python is my go-to language for developing games, families in the turtle module,
     |       |-- dropdown_menu.py
     |       |-- entry.py
     |       |-- file_dialog.py
+    |       |-- fonts.py
     |       |-- grid.py
     |       |-- Image_viewer.py
     |       |-- Image.py
