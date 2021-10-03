@@ -27,6 +27,7 @@ Python is my go-to language for developing games, families in the turtle module,
     |   |   |-- Collections.py
     |   |   |-- Dictionary.py
     |   |   |-- Exceptions.py
+    |   |   |-- Generators.py
     |   |   |-- Itertools.py
     |   |   |-- Lambda.py
     |   |   |-- queen_backtracking.py
