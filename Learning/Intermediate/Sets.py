@@ -1,5 +1,8 @@
 # Sets : unordered, mutable, no duplicates.
 
+#! If you convert a array with duplicate elements to
+#! a set, then it will remove all the duplicate elements.
+
 # Initialisation
 setA={1,2,3};
 setB=set([4,4,5,6]);

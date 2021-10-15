@@ -8,6 +8,9 @@ dictA={
        };
 dictB=dict(key4="value4",key5="value5",key6="value6");
 dictB["key7"]="value7";
+# Access key-value
+dictA["key1"] # This will throw a error if key is not present.
+dictA.get("keyx") # This will return none if key is not present. 
 # remove key-value pair
 del dictB["key4"];
 # pop key-value pair
@@ -44,3 +47,9 @@ for letter in string.ascii_lowercase:
 res2=[res[w]for w in string.ascii_lowercase]
 
 print(dictB);
+
+# Merge two or more dictiories.
+d1={"name":"a","age":13}
+d2={"name":"a","sex":"M"}
+
+d3={**d1,**d2}

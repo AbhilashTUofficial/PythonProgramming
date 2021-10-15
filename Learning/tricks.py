@@ -3,6 +3,8 @@
 arr0=[1,2,2,3,4,4,4,5]
 arr1=[]
 [arr1.append(x)for x in arr0 if x not in arr1]
+#! Or Convert into a set
+#! A set is an unorder colloction of unique elements.
 # print(arr1)
 
 # to get (i,j),(i+j),(i!=j), etc combination of a array.
@@ -17,3 +19,12 @@ print(m[-1])
 
 a=4
 print("Even" if(a%2==0)else "Odd");
+
+# Combine,reverse and swap case
+
+sentence="pROGRAMMING pYTHON"
+print(' '.join(reversed((sentence.swapcase()).split(' '))))
+
+# Convert long digit into individual digits.
+n=1244
+print([int(_) for _ in str(n)])

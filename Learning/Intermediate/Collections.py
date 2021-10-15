@@ -6,6 +6,9 @@ from collections import Counter
 
 # Initialisation
 stringA="aaabbbbcddddd";
+intA=[3,5,5,3,3,2]
+Counter(intA) # return elements and its count.
+Counter(intA).most_common(1)# return second most common item and count.
 counterA=Counter(stringA);
 # CounterA
 # { 'd' : 5, 'b' : 4, 'a' : 3, 'c' : 1}
