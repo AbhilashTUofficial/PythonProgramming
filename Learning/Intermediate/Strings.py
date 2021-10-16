@@ -30,7 +30,9 @@ stringC[:];
 # Slice the string by step
 stringC[::2];
 stringC[::1];
-stringC[::-1] # Reverse the string.
+# Reverse the string.
+stringC[::-1] 
+print("happy"[::-1])
 # Length of the string
 len(stringA);
 # Convert to lower-case

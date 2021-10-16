@@ -9,6 +9,10 @@ listA[0];
 listA[-1];
 # second-last element in the list
 listA[-2];
+# smallest and largest element
+min([6,4,3,2])
+max([6,4,3,2])
+
 # iterate through list-item
 for item in listA:
     pass;
@@ -17,6 +21,7 @@ if "one" in listA:
     pass;
 # get the length of the list
 len(listA);
+len([1,2,3])
 # Append new item to list
 listA.append("new element");
 # Insert new item to list

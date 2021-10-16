@@ -39,6 +39,7 @@ tupleC[::2];
 tupleC[::1];
 tupleC[::-1] # Reverse the tuple.
 # Un-pack the tuple.
+(i,j,k)=(1,2,3) # i=1,j=2,k=3
 tupleF=(1,2,3);
 elem1,elem2,elem3=tupleF;
 tupleG=(1,2,3,4,5,6);

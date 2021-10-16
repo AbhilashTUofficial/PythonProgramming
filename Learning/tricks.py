@@ -28,3 +28,6 @@ print(' '.join(reversed((sentence.swapcase()).split(' '))))
 # Convert long digit into individual digits.
 n=1244
 print([int(_) for _ in str(n)])
+
+# Check the value is the given instance
+print(isinstance("string",str))
