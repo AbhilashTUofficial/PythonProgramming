@@ -28,6 +28,10 @@ def main():
     print([[i for i in arr2]for _ in arr2])
 
 
+# 2D looping
+arr=[]
+[arr.append(i,j) for i in arr for j in arr]
+[arr.append(i,j) for i in arr for j in arr if arr!=[]]
 
 
 if __name__=='__main__':

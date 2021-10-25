@@ -56,10 +56,12 @@ stringD.isprintable();
 stringD.startswith("a");
 # Return index of sub-string
 stringD.find("b");
+stringD.index("a");
 # Return the count of sub-string
 stringD.count("a");
 # Replace sub-string with a new sub-string
 stringD.replace("A","Z");
+newStr=stringD.replace("A","Z");
 # iterate through String
 for i in stringC:
     pass;
@@ -74,6 +76,8 @@ stringF="a b c d e";
 stringG="a,b,c,d";
 stringF.split();
 stringG.split(",");
+stringL=[]
+[stringL.append(_)for _ in stringF]
 # Convert list to string
 listA=["a","b","c"];
 stringA.join(listA);
@@ -93,5 +97,9 @@ alpha=[string.ascii_letters]
 alpha=[string.ascii_lowercase]
 alpha=[string.ascii_uppercase]
 
+# String is iterable.
+s="happy"
+for let in s:
+    print(let)
 
 print(stringK)

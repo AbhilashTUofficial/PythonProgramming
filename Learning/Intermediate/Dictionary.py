@@ -53,3 +53,7 @@ d1={"name":"a","age":13}
 d2={"name":"a","sex":"M"}
 
 d3={**d1,**d2}
+
+# Create dictionary form array
+arr=[1,2,3]
+dictE={i:arr[i]for i in range(len(arr))}

@@ -31,3 +31,35 @@ print([int(_) for _ in str(n)])
 
 # Check the value is the given instance
 print(isinstance("string",str))
+
+# Flatten nested Array
+def flattenArray(arr):
+    arr2=[]
+    for i in arr:
+        if(isinstance(i,int)):
+            arr2.append(i)
+        else:
+            arr2.extend(flattenArray(i))
+    return arr2
+
+# Remove a specific element from array
+arr=[]
+arr=[i for i in arr if i!=0]
+
+# Find the ascii value
+print(ord('s'))
+
+# Reversed range in loop
+for i in range(10)[::-1]:
+    pass
+
+
+# Get a array of unique elements and 
+# a array of its count
+arr=[1,4,4,2,2,3,7]
+arr=sorted(arr)
+arrY,arrX=[],[]
+[arrX.append(_) for _ in arr if _ not in arrX]
+[arrY.append(arr.count(_)) for _ in arrX]
+# Most frequent elements
+arrX[arrY.index(max(arrY))]

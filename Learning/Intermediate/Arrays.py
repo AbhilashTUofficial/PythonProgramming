@@ -65,5 +65,22 @@ listF=list(tupleA);
 elem1,elem2,elem3=listA;
 listG=[1,2,3,4,5,6];
 elem4,*elemX,elem9=listG;
+# Merge elements from another list
+listG.extend(listA)
 
 print(sys.getsizeof(listA)); # 80 bytes
+
+# Flatten nested Array
+def flattenArray(arr):
+    arr2=[]
+    for i in arr:
+        if(isinstance(i,int)):
+            arr2.append(i)
+        else:
+            arr2.extend(flattenArray(i))
+    return arr2
+
+# Remove a specific element from array
+arr=[]
+arr=[i for i in arr if i!=0]
+

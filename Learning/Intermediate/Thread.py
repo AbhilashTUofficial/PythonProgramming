@@ -1,5 +1,6 @@
 from threading import Thread
 from time import sleep
+import time
 
 #* Threads: An entity within a process that can be scheduled (also know as lightweight process)
 #
@@ -34,11 +35,39 @@ def _multiThreading():
     #! Don't use () on target
     #! Use args=value to pass arguments
     for t in range(3):
-        Thread(target=_task,args=(t,0)).start()    
+        thread=Thread(target=_task,args=(t,0))
+        thread.start()
+        # thread.join()  
+
+#* Passing data between threads.
+
+x=0
+def increament():
+    global x
+    x+=1
+
+
+def passingData():
+
+    print(f"Initial Value: {x}")
+
+    thread1=Thread(target=increament)
+    thread2=Thread(target=increament)
+
+    thread1.start()
+    thread2.start()
+
+    thread1.join()
+    thread2.join()
+
+    print(f"Final Value: {x}")
+
+
 
 
 def main():
-    _multiThreading()
+    passingData()
+    # _multiThreading()
         
 
 if __name__=='__main__':
