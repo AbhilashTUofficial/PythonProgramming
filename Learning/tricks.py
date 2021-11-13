@@ -48,6 +48,8 @@ arr=[i for i in arr if i!=0]
 
 # Find the ascii value
 print(ord('s'))
+# ascii value to string
+print(chr(97))
 
 # Reversed range in loop
 for i in range(10)[::-1]:
@@ -63,3 +65,17 @@ arrY,arrX=[],[]
 [arrY.append(arr.count(_)) for _ in arrX]
 # Most frequent elements
 arrX[arrY.index(max(arrY))]
+
+# Clear terminal 
+
+from os import system,name
+def clear():
+    # for windows
+    if name == 'nt':_ = system('cls')
+    # for mac and linux
+    else: _ = system('clear')
+
+# Colorize output
+
+color=['\033[95m','\033[94m','\033[92m','\033[93m','\033[91m']
+print(f'{color[3]}Colors!{color[3]}')
