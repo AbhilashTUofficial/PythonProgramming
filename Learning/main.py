@@ -37,19 +37,25 @@ def main():
     color=['\033[95m','\033[94m','\033[92m','\033[93m','\033[91m']
     c=random.randint(0, len(color)-1)
 
-    while True:
-        clear()
-        # s=[f'{color[random.randint(0, len(color)-1)]}{s}' for s in tmpStr]
-        [print(x,end='')for x in tmpStr]
-        # print(f"{color[1]}{tmpStr}{color[1]}")
-        sleep(0.1)
-        if findAscii(tmpStr)==findAscii(finalStr):break
-        if(findAscii(tmpStr[-1])==findAscii(finalStr[len(tmpStr)-1])):
-            tmpStr=f'{tmpStr}{letters[i]}'
-            i=0
-        else:
-            tmpStr=f'{tmpStr[:-1]}{letters[i]}'
-            i+=1
+    a,b,c=[1,2,3],[4,5,6],[7,8,9]
+
+    for i,j,k in a:
+        print(i,j,k)
+
+
+    # while True:
+    #     clear()
+    #     # s=[f'{color[random.randint(0, len(color)-1)]}{s}' for s in tmpStr]
+    #     [print(x,end='')for x in tmpStr]
+    #     # print(f"{color[1]}{tmpStr}{color[1]}")
+    #     sleep(0.1)
+    #     if findAscii(tmpStr)==findAscii(finalStr):break
+    #     if(findAscii(tmpStr[-1])==findAscii(finalStr[len(tmpStr)-1])):
+    #         tmpStr=f'{tmpStr}{letters[i]}'
+    #         i=0
+    #     else:
+    #         tmpStr=f'{tmpStr[:-1]}{letters[i]}'
+    #         i+=1
 
     
 if __name__=="__main__":

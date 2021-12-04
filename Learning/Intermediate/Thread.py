@@ -66,8 +66,8 @@ def passingData():
 
 
 def main():
-    passingData()
-    # _multiThreading()
+    # passingData()
+    _multiThreading()
         
 
 if __name__=='__main__':
