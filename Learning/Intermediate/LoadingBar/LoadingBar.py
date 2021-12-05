@@ -1,35 +1,30 @@
 import time
-from multiprocessing import Process
+import asyncio
 
 
+async def process():
 
-def process():
 
     for i in range(60):
+        time.sleep(0.4)
+
+        open('Learning/Intermediate/LoadingBar/file.txt',"w").write(f'{i}') 
+
+
+async def readProgress():
+    print(open('Learning/Intermediate/LoadingBar/file.txt',"r").read()) 
+
+
+async def basic():
+    while True:
         time.sleep(1)
-        open('Learning/Intermediate/LoadingBar/file.txt',"w").write(f'{i}')
-
-def readProgress():
-    for i in range(30):
-        time.sleep(2)
-        print(open('Learning/Intermediate/LoadingBar/file.txt',"r").read()) 
-
-
-def basic():
-
-    pass
-
-    
+        asyncio.create_task(process())
+        asyncio.create_task(readProgress())
 
 
 
 
 if __name__=="__main__":
-    basic()
-    p1=Process(target=process())
-    p2=Process(target=readProgress())
-    p1.start()
-
-    p2.start()
+    asyncio.run(basic())
 
     
