@@ -1,30 +1,55 @@
 import time
-import asyncio
 
 
-async def process():
+green='\033[92m'
+bold='\033[1m'
+
+def minimal():
+
+    for i in range(100):
+        time.sleep(0.1)
+        print(f"{green}{bold}{i}%{green}{bold}",end="\r")
+    
+    for i in range(100):
+        time.sleep(0.1)
+        print(f"{green}{bold}|{bold}{green}"*i,end="\r")
 
 
-    for i in range(60):
-        time.sleep(0.4)
+def basic():
 
-        open('Learning/Intermediate/LoadingBar/file.txt',"w").write(f'{i}') 
+    #! Not Working as expected!
+    
+    s='.'
+    for i in range(100):
+        time.sleep(0.1)
+        if len(s)>10:
+            s=str('.'*1)
+        else:
+            s='.'*(len(s)+1)
 
+        print(f"{green}{bold}Now Loading.{s}{bold}{green}",end="\r")
 
-async def readProgress():
-    print(open('Learning/Intermediate/LoadingBar/file.txt',"r").read()) 
+    from tqdm import tqdm
 
+    loop=tqdm(total=50,position=0,leave=False)
+    for i in range(50):
+        time.sleep(0.1)
+        loop.set_description(f"{green}{bold}Loading: ".format(i))
+        loop.update(1)
+    loop.close()
 
-async def basic():
-    while True:
-        time.sleep(1)
-        asyncio.create_task(process())
-        asyncio.create_task(readProgress())
+    
+def good():
+    from tqdm.auto import tqdm
+    for i in tqdm(range(int(9e6))):
+        print("",end="\r")
 
-
-
+def main():
+    print("\n____LOADING BARS____\n")
+    basic()
+    
 
 if __name__=="__main__":
-    asyncio.run(basic())
+    main()
 
     
