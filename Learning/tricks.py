@@ -87,7 +87,7 @@ FAIL = '\033[91m'
 ENDC = '\033[0m'
 BOLD = '\033[1m'
 UNDERLINE = '\033[4m'
-print(f'{color[3]}Colors!{color[3]}')
+# print(f'{color[3]}Colors!{color[3]}')
 
 
 # get all coordinate between two points
@@ -99,3 +99,18 @@ def solve( coordinates):
          if (x0 - x1) * (y1 - y) != (x1 - x) * (y0 - y1):
             return False
       return True
+
+# Get all the countinous segments from a array
+def segmentation(arr):
+    segments=[]
+    for i in range(len(arr)):
+        for j in range(len(arr)+1):
+            if i<j:
+                segments.append(arr[i:j])
+
+    return segments
+
+
+
+
+print(segmentation(arr))
