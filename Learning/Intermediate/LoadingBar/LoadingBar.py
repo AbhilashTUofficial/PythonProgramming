@@ -46,8 +46,7 @@ def good():
 
 def main():
     print("\n____LOADING BARS____\n")
-    basic()
-    
+    basic()    
 
 if __name__=="__main__":
     main()
