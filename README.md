@@ -17,6 +17,12 @@ Python is my go-to language for developing games, families in the turtle module,
     |       |-- BubbleSort.py
     |       |-- InsertionSort.py
     |       |-- MergeSort.py
+            |-- quickSort.py
+            |-- selectionSort.py
+            |-- shellSort.py
+        |-- Searching
+            |-- binarySearch.py
+            |-- linearSearch.py
     |
     |-- Learning
     |   |
